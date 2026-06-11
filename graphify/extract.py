@@ -2278,7 +2278,7 @@ def extract(paths: list[Path]) -> dict:
     except Exception:
         root = Path(".")
 
-    _JS_SUFFIXES = {".js", ".ts", ".tsx"}
+    _JS_SUFFIXES = {".js", ".mjs", ".cjs", ".ts", ".tsx"}
 
     for path in paths:
         if path.suffix == ".py":
